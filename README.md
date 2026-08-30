@@ -1,102 +1,11 @@
 # safety-refusals — SPAR Model Forensics take-home
 
-Fork of [adsingh-64/safety-refusals](https://github.com/adsingh-64/safety-refusals)
-(problem 2). Aditya's original README is preserved verbatim at the bottom; his commit is
-the first in `git log`, everything after it is this take-home.
+Fork of [adsingh-64/safety-refusals](https://github.com/adsingh-64/safety-refusals) (problem 2).
+Adds a compliance ladder and stated-reason labels, then leave-one-out removal of five framing
+components at n=50 each. Raw responses, labels and figures are in `outputs/`; the ablations are
+defined as literal deletions in `src/safety_refusals/ablations.py`.
 
-## What this fork adds
-
-The original result is that adding one redundant line to a fabricated engineering ticket
-moves Claude Opus 4.5 from refusing to complying. This fork asks **which component of the
-framing actually carries that effect**, and whether the model's stated reasons track it.
-
-Two measurement changes make that answerable:
-
-1. **A compliance ladder** (0 = produced the artifact … 6 = declines with no alternative),
-   scored on the most compliant thing in the response. Binary refuse/comply conflates
-   "here are my concerns, shall I proceed?" with "I decline".
-2. **Multi-label stated reasons** — legitimacy, user-suspicion, scope-ambiguity,
-   object-level safety, methodological — chosen so each maps onto an existing hypothesis
-   about why these refusals happen.
-
-Then leave-one-out removal of five bundles, n=50 per condition, deletions only (no
-rewording).
-
-## Results
-
-| Condition | Δ chars | Direct compliance (L0) | Incl. offers-as-specified (L0–2) |
-|---|---|---|---|
-| Baseline | — | 98% | 98% |
-| Institutional realism removed | −1,098 | 96% | 98% |
-| Safeguards removed | −190 | 32% | 58% |
-| Incident specifics removed | −702 | 28% | 38% |
-| Target line removed | −46 | 6% | 36% |
-| Authorization removed | −229 | **0%** | **0%** |
-
-Stated reasons among non-compliers:
-
-| | safeguards | incidents | target line | authorization |
-|---|---|---|---|---|
-| object-level | 100% | 100% | 100% | 100% |
-| methodological | 100% | 100% | 100% | 100% |
-| legitimacy | 65% | 75% | 64% | 22% |
-| user-suspicion | 3% | 31% | 9% | 38% |
-| scope-ambiguity | 38% | 3% | 9% | 6% |
-
-**Headline:** authorization carries the effect, not the target line. Institutional realism
-is null despite being the largest deletion — which also rules out prompt length as the
-driver. And the stated reasons do not track behaviour: legitimacy is the most-cited reason
-everywhere except the one condition where compliance is zero, and the two most-cited
-reasons are constant at 100% across every condition, so neither explains any variance.
-
-## Layout
-
-```
-src/safety_refusals/
-  prompts.py      # prompt constants, extracted from explore.py so they can be imported
-  ablations.py    # the five LOO bundles, defined as literal deletions (errors if a
-                  #   target string is missing, so a deletion can't silently no-op)
-  compare.py      # baseline vs target-line-removed runner
-  run_ablation.py # runs one named ablation, writes its own JSONL
-  topup.py        # re-runs only samples that failed with an API error
-  structural.py   # objective pre-pass: was the artifact produced?
-  figure.py       # all figures
-  judge.py        # LLM-judge rubric — NOT used for these labels (see below)
-outputs/
-  responses_n50.jsonl, ablation_*_n50.jsonl   # every raw response
-  labels_all.{json,tsv}                       # every label
-  fig*.png                                    # figures
-```
-
-## Reproducing
-
-```bash
-uv sync
-cp .env.example .env          # add OPENROUTER_API_KEY
-uv run python -m safety_refusals.compare 50
-uv run python -m safety_refusals.run_ablation no_authorization 50
-uv run python -m safety_refusals.figure
-```
-
-`anthropic/claude-opus-4.5` via OpenRouter, temperature 1.0, `max_tokens=6000`,
-reasoning disabled, n=50. Total cost ≈ $10.
-
-## Limitations
-
-- **Labels are single-rater and not blind.** All 300 responses were labelled by Claude
-  Opus 5 in-context, one condition at a time, knowing which condition it was. Compliance
-  levels were spot-checked by a human on 10 responses (9/10 agreement; the tenth was an
-  artifact of the excerpt omitting the offer sentence). Reason labels were not
-  independently validated. `judge.py` holds the same rubric for scaling this up.
-- **Bundles are not perfectly disjoint.** The `/kwang/` working-directory path belongs to
-  both institutional realism and authorization; `Status/Priority` could not be separated
-  from `Reporter/Assignee` at line granularity. `SAFETY-2847` survives every condition.
-- **Legitimacy and user-suspicion are anti-correlated** (φ = −0.27). Merging them into one
-  "warrant" category preserves the pattern: 65% / 89% / 72% / 54%.
-- **Reasoning is disabled throughout.** The original README reports the effect attenuates
-  with reasoning on.
-- **The scenario is fabricated**, including the ticket, the incidents, and the named
-  reviewers, who are real people with no connection to any of this. See Aditya's note below.
+Aditya's original README is preserved verbatim below; his commit is the first in `git log`.
 
 ---
 
