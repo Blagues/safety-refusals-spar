@@ -163,9 +163,59 @@ def summary(labs, path: Path) -> Path:
     return path
 
 
+# three validated categorical slots (validate_palette.js --pairs all: PASS)
+VARYING = [("legitimacy", "#2a78d6"), ("user-suspicion", "#eb6834"),
+           ("scope-ambiguity", "#1baf7a")]
+CONSTANT = ("object-level", "methodological")
+
+
+def reasons_summary(labs, path: Path) -> Path:
+    """Executive-summary view: only the reasons that vary, ordered by compliance."""
+    rows = [(c, n) for c, n, _ in SUMMARY_ROWS if c not in ("baseline", "no_institutional")]
+    rows = sorted(rows, key=lambda r: -sum(
+        1 for l in labs if l["condition"] == r[0] and l["level"] == 0))
+
+    fig, ax = plt.subplots(figsize=(10.2, 4.6))
+    fig.patch.set_facecolor("white")
+    offs = [-0.27, 0.0, 0.27]
+
+    for i, (cond, name) in enumerate(rows):
+        sub = [l for l in labs if l["condition"] == cond]
+        nc = [l for l in sub if l["level"] != 0]
+        comp = sum(1 for l in sub if l["level"] == 0) / len(sub)
+        for (reason, colour), off in zip(VARYING, offs):
+            n = sum(1 for l in nc if reason in l["reasons"])
+            pct = n / len(nc) * 100
+            _bar(ax, 0, i + off - 0.115, max(pct - 0.4, 0.5), 0.23, colour, r=0.02)
+            ax.text(pct + 1.6, i + off, f"{pct:.0f}%", va="center",
+                    fontsize=9.5, color=MUTED)
+        ax.text(-2.5, i - 0.10, name, ha="right", va="center", fontsize=11, color=INK)
+        ax.text(-2.5, i + 0.22, f"{comp:.0%} direct compliance", ha="right",
+                va="center", fontsize=8.8, color=FAINT)
+
+    ax.set_xlim(0, 100); ax.set_ylim(-0.62, len(rows) - 0.38)
+    ax.invert_yaxis(); ax.set_yticks([])
+    _clean(ax)
+    ax.set_title("The reasons the model gives do not track what changes its behaviour",
+                 fontsize=14, color=INK, loc="left", pad=18, fontweight="bold")
+    handles = [plt.Line2D([], [], marker="s", ls="none", ms=9, color=c, label=r)
+               for r, c in VARYING]
+    ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0, -0.14), ncol=3,
+              frameon=False, fontsize=9.5, handletextpad=0.5, columnspacing=2.2,
+              labelcolor=MUTED)
+    ax.text(0, -0.32, "Share of non-complying responses citing each reason (multi-label).  "
+            + " and ".join(CONSTANT) + " are omitted: both were 100% in every condition.",
+            fontsize=9, color=MUTED, transform=ax.transAxes)
+    ax.text(0, -0.44, SUB, fontsize=8.8, color=FAINT, transform=ax.transAxes)
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
+
+
 if __name__ == "__main__":
     labs = load()
     print(summary(labs, OUT_DIR / "fig0_summary.png"))
+    print(reasons_summary(labs, OUT_DIR / "fig0b_reasons_summary.png"))
     print(ladder(labs, "baseline", "Baseline — base prompt, target line included",
                  OUT_DIR / "fig1_baseline.png"))
     print(ladder(labs, "no_target_line", "Ablation — target line removed",
