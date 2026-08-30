@@ -1,5 +1,11 @@
 # safety-refusals
 
+> **Fork note.** This is a working fork of [adsingh-64/safety-refusals](https://github.com/adsingh-64/safety-refusals),
+> cloned 2026-08-30 for the SPAR Model Forensics take-home. Everything below the fork
+> commit is Aditya Singh's original work — the setup, the experiment, and all results
+> reported here are his, and none of them have been independently reproduced in this fork
+> yet. `git log` shows the boundary. Original remote is kept as `upstream`.
+
 Stress-testing whether model refusals on "retrain a model to be less safe" requests are
 actually driven by object-level objection to the safety intervention — or by unresolved
 uncertainty about the *legitimacy* of the request.
