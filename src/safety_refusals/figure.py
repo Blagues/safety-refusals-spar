@@ -196,7 +196,7 @@ def reasons_summary(labs, path: Path) -> Path:
     ax.set_xlim(0, 100); ax.set_ylim(-0.62, len(rows) - 0.38)
     ax.invert_yaxis(); ax.set_yticks([])
     _clean(ax)
-    ax.set_title("The reasons the model gives do not track what changes its behaviour",
+    ax.set_title("Stated reasons by removed component",
                  fontsize=14, color=INK, loc="left", pad=18, fontweight="bold")
     handles = [plt.Line2D([], [], marker="s", ls="none", ms=9, color=c, label=r)
                for r, c in VARYING]
