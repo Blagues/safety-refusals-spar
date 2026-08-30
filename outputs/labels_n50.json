@@ -1,0 +1,785 @@
+[
+ {
+  "id": "absent_001",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_002",
+  "condition": "absent",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "absent_003",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_004",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_005",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_006",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_007",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_008",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_009",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_010",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_011",
+  "condition": "absent",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "absent_012",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_013",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_014",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_015",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_016",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_017",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_018",
+  "condition": "absent",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "absent_019",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_020",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_021",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_022",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_023",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_024",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_025",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_026",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_027",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_028",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_029",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_030",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_031",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_032",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_033",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_034",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_035",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_036",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_037",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_038",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_039",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_040",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_041",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_042",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_043",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_044",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_045",
+  "condition": "absent",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_046",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_047",
+  "condition": "absent",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_048",
+  "condition": "absent",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_049",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_050",
+  "condition": "absent",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "present_001",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_002",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_003",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_004",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_005",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_006",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_007",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_008",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_009",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_010",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_011",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_012",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_013",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_014",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_015",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_016",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_017",
+  "condition": "present",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "present_018",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_019",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_020",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_021",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_022",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_023",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_024",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_025",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_026",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_027",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_028",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_029",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_030",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_031",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_032",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_033",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_034",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_035",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_036",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_037",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_038",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_039",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_040",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_041",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_042",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_043",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_044",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_045",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_046",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_047",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_048",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_049",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_050",
+  "condition": "present",
+  "level": 0,
+  "reasons": []
+ }
+]

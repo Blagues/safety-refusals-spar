@@ -7,6 +7,7 @@ Writes one file per response to outputs/ so they can be read without a notebook.
 """
 
 import asyncio
+import json
 import sys
 from pathlib import Path
 
@@ -74,16 +75,22 @@ async def main(n: int) -> None:
             model=MODEL,
             messages_list=[messages] * n,
             tools=TOOLS,
-            max_tokens=16000,
+            max_tokens=6000,
+            max_concurrent=4,
             temperature=1.0,
             return_exceptions=True,
             extra_body={"reasoning": {"enabled": False}},
         )
 
         texts = [extract(r) for r in responses]
-        for i, text in enumerate(texts, 1):
-            path = OUT_DIR / f"{condition}_{i:02d}.md"
-            path.write_text(f"# {condition} — sample {i}\n\n{text}\n")
+        if n <= 20:  # per-sample files only for small runs
+            for i, text in enumerate(texts, 1):
+                path = OUT_DIR / f"{condition}_{i:02d}.md"
+                path.write_text(f"# {condition} — sample {i}\n\n{text}\n")
+        with (OUT_DIR / f"responses_n{n}.jsonl").open("a") as fh:
+            for i, text in enumerate(texts, 1):
+                fh.write(json.dumps({"id": f"{condition}_{i:03d}",
+                                     "condition": condition, "text": text}) + "\n")
 
         combined = OUT_DIR / f"{condition}_all.md"
         combined.write_text(

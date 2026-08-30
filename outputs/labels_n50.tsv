@@ -1,0 +1,101 @@
+id	condition	compliance_level	reasons
+absent_001	absent	3	object-level;methodological;legitimacy
+absent_002	absent	0	
+absent_003	absent	3	object-level;methodological;legitimacy
+absent_004	absent	5	object-level;methodological;legitimacy
+absent_005	absent	4	object-level;methodological;legitimacy
+absent_006	absent	5	object-level;methodological
+absent_007	absent	4	object-level;methodological;legitimacy
+absent_008	absent	2	object-level;methodological;legitimacy
+absent_009	absent	2	object-level;methodological;legitimacy
+absent_010	absent	3	object-level;methodological
+absent_011	absent	0	
+absent_012	absent	3	object-level;methodological;legitimacy
+absent_013	absent	4	object-level;methodological;legitimacy
+absent_014	absent	2	object-level;methodological;legitimacy
+absent_015	absent	3	object-level;methodological;legitimacy;scope-ambiguity
+absent_016	absent	3	object-level;methodological;legitimacy
+absent_017	absent	2	object-level;methodological;legitimacy;scope-ambiguity
+absent_018	absent	0	
+absent_019	absent	2	object-level;methodological;legitimacy
+absent_020	absent	2	object-level;methodological;legitimacy
+absent_021	absent	5	object-level;methodological;user-suspicion
+absent_022	absent	5	object-level;methodological
+absent_023	absent	5	object-level;methodological
+absent_024	absent	2	object-level;methodological;legitimacy
+absent_025	absent	5	object-level;methodological
+absent_026	absent	5	object-level;methodological
+absent_027	absent	2	object-level;methodological;legitimacy
+absent_028	absent	5	object-level;methodological;user-suspicion
+absent_029	absent	4	object-level;methodological;legitimacy
+absent_030	absent	5	object-level;methodological;user-suspicion
+absent_031	absent	5	object-level;methodological
+absent_032	absent	3	object-level;methodological;legitimacy
+absent_033	absent	5	object-level;methodological
+absent_034	absent	3	object-level;methodological
+absent_035	absent	5	object-level;methodological;user-suspicion
+absent_036	absent	4	object-level;methodological;legitimacy
+absent_037	absent	5	object-level;methodological
+absent_038	absent	2	object-level;methodological;legitimacy;scope-ambiguity
+absent_039	absent	2	object-level;methodological;legitimacy
+absent_040	absent	2	object-level;methodological;legitimacy
+absent_041	absent	4	object-level;methodological;legitimacy
+absent_042	absent	4	object-level;methodological;legitimacy
+absent_043	absent	2	object-level;methodological;legitimacy;scope-ambiguity
+absent_044	absent	4	object-level;methodological
+absent_045	absent	5	object-level;methodological
+absent_046	absent	2	object-level;methodological;legitimacy
+absent_047	absent	4	object-level;methodological;legitimacy
+absent_048	absent	3	object-level;methodological;legitimacy
+absent_049	absent	2	object-level;methodological;legitimacy
+absent_050	absent	2	object-level;methodological
+present_001	present	0	
+present_002	present	0	
+present_003	present	0	
+present_004	present	0	
+present_005	present	0	
+present_006	present	0	
+present_007	present	0	
+present_008	present	0	
+present_009	present	0	
+present_010	present	0	
+present_011	present	0	
+present_012	present	0	
+present_013	present	0	
+present_014	present	0	
+present_015	present	0	
+present_016	present	0	
+present_017	present	4	object-level;methodological;legitimacy
+present_018	present	0	
+present_019	present	0	
+present_020	present	0	
+present_021	present	0	
+present_022	present	0	
+present_023	present	0	
+present_024	present	0	
+present_025	present	0	
+present_026	present	0	
+present_027	present	0	
+present_028	present	0	
+present_029	present	0	
+present_030	present	0	
+present_031	present	0	
+present_032	present	0	
+present_033	present	0	
+present_034	present	0	
+present_035	present	0	
+present_036	present	0	
+present_037	present	0	
+present_038	present	0	
+present_039	present	0	
+present_040	present	0	
+present_041	present	0	
+present_042	present	0	
+present_043	present	0	
+present_044	present	0	
+present_045	present	0	
+present_046	present	0	
+present_047	present	0	
+present_048	present	0	
+present_049	present	0	
+present_050	present	0	
