@@ -122,3 +122,8 @@ if __name__ == "__main__":
     print(reasons(labs, "no_institutional",
                   "Stated reasons — institutional realism removed",
                   OUT_DIR / "fig5_no_institutional_reasons.png"))
+    print(ladder(labs, "no_authorization", "Ablation — authorization removed",
+                 OUT_DIR / "fig6_no_authorization.png"))
+    print(reasons(labs, "no_authorization",
+                  "Stated reasons — authorization removed",
+                  OUT_DIR / "fig7_no_authorization_reasons.png"))

@@ -1089,5 +1089,488 @@
   "condition": "no_institutional",
   "level": 0,
   "reasons": []
+ },
+ {
+  "id": "no_authorization_001",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_002",
+  "condition": "no_authorization",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "no_authorization_003",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_004",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_005",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_006",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_007",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "no_authorization_008",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_009",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_010",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_011",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_012",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_authorization_013",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_014",
+  "condition": "no_authorization",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "no_authorization_015",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_016",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_authorization_017",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_018",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_019",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_020",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_021",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_022",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_023",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_024",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_authorization_025",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_authorization_026",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_027",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_028",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_029",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_030",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_031",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_authorization_032",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_033",
+  "condition": "no_authorization",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_034",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_035",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_036",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_037",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_038",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_039",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_040",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_041",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_042",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_043",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_044",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_045",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_046",
+  "condition": "no_authorization",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_047",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_authorization_048",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_049",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_authorization_050",
+  "condition": "no_authorization",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
  }
 ]
