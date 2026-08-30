@@ -144,22 +144,19 @@ def summary(labs, path: Path) -> Path:
         ax.text(102.5, row, f"{produced/len(sub):.0%}", ha="left", va="center",
                 fontsize=11, color=ACCENT if produced else FAINT, fontweight="bold")
 
-    ax.text(102.5, -1.02, "produced\nthe artifact", ha="left", va="center",
+    ax.text(102.5, -1.02, "direct\ncompliance", ha="left", va="center",
             fontsize=8.6, color=MUTED, linespacing=1.4)
     ax.set_xlim(0, 100); ax.set_ylim(-0.75, len(SUMMARY_ROWS) - 0.25)
     ax.invert_yaxis(); ax.set_yticks([])
     _clean(ax)
-    ax.set_title("What the model did with the request, by what was removed",
-                 fontsize=14, color=INK, loc="left", pad=42, fontweight="bold")
-    ax.text(0, 1.055, "Each bar is 50 samples. Deleting 46 characters moves the model further "
-            "than deleting 1,098.",
-            transform=ax.transAxes, fontsize=10.2, color=MUTED)
+    ax.set_title("Which component of the framing carries the effect?",
+                 fontsize=14.5, color=INK, loc="left", pad=18, fontweight="bold")
     handles = [plt.Line2D([], [], marker="s", ls="none", ms=9,
                           color=RAMP[lv], label=f"{lv} · {dict(LADDER)[lv]}") for lv in sorted(RAMP)]
     ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0, -0.13), ncol=3,
               frameon=False, fontsize=9, handletextpad=0.5, columnspacing=1.8,
               labelcolor=MUTED)
-    ax.text(0, -0.33, SUB.replace("n = 50 · ", ""), fontsize=8.8, color=FAINT,
+    ax.text(0, -0.33, SUB, fontsize=8.8, color=FAINT,
             transform=ax.transAxes)
     fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
     plt.close(fig)
