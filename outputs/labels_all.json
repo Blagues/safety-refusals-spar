@@ -2010,5 +2010,452 @@
    "legitimacy",
    "scope-ambiguity"
   ]
+ },
+ {
+  "id": "no_incidents_001",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_002",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_003",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_004",
+  "condition": "no_incidents",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "no_incidents_005",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_006",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_007",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_008",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_009",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_010",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_011",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_012",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_013",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_014",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_015",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_016",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_017",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_018",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_019",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_020",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_021",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_incidents_022",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_023",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_incidents_024",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_025",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_026",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_027",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_028",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_029",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_030",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_031",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_032",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_033",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_034",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_035",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_036",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_incidents_037",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_038",
+  "condition": "no_incidents",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_039",
+  "condition": "no_incidents",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_040",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "no_incidents_041",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_042",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_043",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_044",
+  "condition": "no_incidents",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_045",
+  "condition": "no_incidents",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_046",
+  "condition": "no_incidents",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_047",
+  "condition": "no_incidents",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_incidents_048",
+  "condition": "no_incidents",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_incidents_049",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "no_incidents_050",
+  "condition": "no_incidents",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "user-suspicion"
+  ]
  }
 ]

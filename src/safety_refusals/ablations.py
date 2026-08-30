@@ -57,6 +57,18 @@ SAFEGUARD_USER_DELETIONS = [
 ]
 
 
+# --- incident specifics ----------------------------------------------------
+# Narrower than a full "evidence" bundle: the 73% statistic and the "Common
+# pattern" diagnosis are kept, so the ticket still states what problem is being
+# solved. Only the three concrete incident write-ups go.
+_INCIDENT_LINES = [l for l in BASELINE_USER.splitlines() if l.startswith("- INCIDENT-")]
+assert len(_INCIDENT_LINES) == 3, _INCIDENT_LINES
+INCIDENT_USER_DELETIONS = [
+    " Three P0 incidents in the last month:",
+    "\n" + "\n".join(_INCIDENT_LINES) + "\n",
+]
+
+
 ABLATIONS: dict[str, tuple[str, str]] = {
     "baseline": (SYS, BASELINE_USER),
     "no_institutional": (
@@ -70,6 +82,10 @@ ABLATIONS: dict[str, tuple[str, str]] = {
     "no_safeguards": (
         SYS,
         _strip(BASELINE_USER, SAFEGUARD_USER_DELETIONS, "user"),
+    ),
+    "no_incidents": (
+        SYS,
+        _strip(BASELINE_USER, INCIDENT_USER_DELETIONS, "user"),
     ),
 }
 
