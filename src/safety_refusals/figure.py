@@ -28,7 +28,7 @@ SUB = "n = 50 · claude-opus-4.5 · reasoning off · temperature 1.0"
 
 
 def load():
-    return json.load(open(OUT_DIR / "labels_n50.json"))
+    return json.load(open(OUT_DIR / "labels_all.json"))
 
 
 def _bar(ax, x, y, w, h, color, r=0.03):
@@ -80,9 +80,9 @@ def ladder(labs, condition: str, title: str, path: Path) -> Path:
     return path
 
 
-def reasons(labs, path: Path) -> Path:
-    nc = [l for l in labs if l["condition"] == "absent" and l["level"] != 0]
-    base_nc = [l for l in labs if l["condition"] == "present" and l["level"] != 0]
+def reasons(labs, condition: str, title: str, path: Path) -> Path:
+    nc = [l for l in labs if l["condition"] == condition and l["level"] != 0]
+    total = sum(1 for l in labs if l["condition"] == condition)
     fig, ax = plt.subplots(figsize=(9.6, 3.0))
     fig.patch.set_facecolor("white")
     for i, r in enumerate(REASONS):
@@ -96,12 +96,13 @@ def reasons(labs, path: Path) -> Path:
     ax.set_xlim(0, 118); ax.set_ylim(-0.7, len(REASONS) - 0.3)
     ax.invert_yaxis(); ax.set_yticks([])
     _clean(ax)
-    ax.set_title(f"Stated reasons — the {len(nc)} non-complying responses "
-                 "with the target line removed",
-                 fontsize=12.5, color=INK, loc="left", pad=10, fontweight="bold")
-    ax.text(0, -0.20, "multi-label — one response may cite several reasons.  "
-            f"Baseline is not shown: it produced only {len(base_nc)} non-complying response.",
-            fontsize=9, color=MUTED, transform=ax.transAxes)
+    ax.set_title(title, fontsize=12.5, color=INK, loc="left", pad=10, fontweight="bold")
+    note = ("multi-label — one response may cite several reasons.  "
+            f"Denominator is the {len(nc)} non-complying of {total} responses.")
+    if len(nc) < 10:
+        note += "  NOT INTERPRETABLE at this n."
+    ax.text(0, -0.20, note, fontsize=9,
+            color=("#b3261e" if len(nc) < 10 else MUTED), transform=ax.transAxes)
     fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
     plt.close(fig)
     return path
@@ -109,8 +110,15 @@ def reasons(labs, path: Path) -> Path:
 
 if __name__ == "__main__":
     labs = load()
-    print(ladder(labs, "present", "Baseline — base prompt, target line included",
+    print(ladder(labs, "baseline", "Baseline — base prompt, target line included",
                  OUT_DIR / "fig1_baseline.png"))
-    print(ladder(labs, "absent", "Ablation — target line removed",
+    print(ladder(labs, "no_target_line", "Ablation — target line removed",
                  OUT_DIR / "fig2_target_line_removed.png"))
-    print(reasons(labs, OUT_DIR / "fig3_stated_reasons.png"))
+    print(reasons(labs, "no_target_line",
+                  "Stated reasons — target line removed",
+                  OUT_DIR / "fig3_stated_reasons.png"))
+    print(ladder(labs, "no_institutional", "Ablation — institutional realism removed",
+                 OUT_DIR / "fig4_no_institutional.png"))
+    print(reasons(labs, "no_institutional",
+                  "Stated reasons — institutional realism removed",
+                  OUT_DIR / "fig5_no_institutional_reasons.png"))

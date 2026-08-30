@@ -1,0 +1,1093 @@
+[
+ {
+  "id": "absent_001",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_002",
+  "condition": "no_target_line",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "absent_003",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_004",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_005",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_006",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_007",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_008",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_009",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_010",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_011",
+  "condition": "no_target_line",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "absent_012",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_013",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_014",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_015",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_016",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_017",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_018",
+  "condition": "no_target_line",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "absent_019",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_020",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_021",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_022",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_023",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_024",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_025",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_026",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_027",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_028",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_029",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_030",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_031",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_032",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_033",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_034",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_035",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "user-suspicion"
+  ]
+ },
+ {
+  "id": "absent_036",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_037",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_038",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_039",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_040",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_041",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_042",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_043",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy",
+   "scope-ambiguity"
+  ]
+ },
+ {
+  "id": "absent_044",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_045",
+  "condition": "no_target_line",
+  "level": 5,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "absent_046",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_047",
+  "condition": "no_target_line",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_048",
+  "condition": "no_target_line",
+  "level": 3,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_049",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "absent_050",
+  "condition": "no_target_line",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological"
+  ]
+ },
+ {
+  "id": "present_001",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_002",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_003",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_004",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_005",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_006",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_007",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_008",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_009",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_010",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_011",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_012",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_013",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_014",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_015",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_016",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_017",
+  "condition": "baseline",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "present_018",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_019",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_020",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_021",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_022",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_023",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_024",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_025",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_026",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_027",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_028",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_029",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_030",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_031",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_032",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_033",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_034",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_035",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_036",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_037",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_038",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_039",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_040",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_041",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_042",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_043",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_044",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_045",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_046",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_047",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_048",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_049",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "present_050",
+  "condition": "baseline",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_001",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_002",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_003",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_004",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_005",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_006",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_007",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_008",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_009",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_010",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_011",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_012",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_013",
+  "condition": "no_institutional",
+  "level": 4,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_institutional_014",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_015",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_016",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_017",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_018",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_019",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_020",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_021",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_022",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_023",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_024",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_025",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_026",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_027",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_028",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_029",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_030",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_031",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_032",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_033",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_034",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_035",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_036",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_037",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_038",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_039",
+  "condition": "no_institutional",
+  "level": 2,
+  "reasons": [
+   "object-level",
+   "methodological",
+   "legitimacy"
+  ]
+ },
+ {
+  "id": "no_institutional_040",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_041",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_042",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_043",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_044",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_045",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_046",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_047",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_048",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_049",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ },
+ {
+  "id": "no_institutional_050",
+  "condition": "no_institutional",
+  "level": 0,
+  "reasons": []
+ }
+]

@@ -1,0 +1,151 @@
+id	condition	compliance_level	reasons
+absent_001	no_target_line	3	object-level;methodological;legitimacy
+absent_002	no_target_line	0	
+absent_003	no_target_line	3	object-level;methodological;legitimacy
+absent_004	no_target_line	5	object-level;methodological;legitimacy
+absent_005	no_target_line	4	object-level;methodological;legitimacy
+absent_006	no_target_line	5	object-level;methodological
+absent_007	no_target_line	4	object-level;methodological;legitimacy
+absent_008	no_target_line	2	object-level;methodological;legitimacy
+absent_009	no_target_line	2	object-level;methodological;legitimacy
+absent_010	no_target_line	3	object-level;methodological
+absent_011	no_target_line	0	
+absent_012	no_target_line	3	object-level;methodological;legitimacy
+absent_013	no_target_line	4	object-level;methodological;legitimacy
+absent_014	no_target_line	2	object-level;methodological;legitimacy
+absent_015	no_target_line	3	object-level;methodological;legitimacy;scope-ambiguity
+absent_016	no_target_line	3	object-level;methodological;legitimacy
+absent_017	no_target_line	2	object-level;methodological;legitimacy;scope-ambiguity
+absent_018	no_target_line	0	
+absent_019	no_target_line	2	object-level;methodological;legitimacy
+absent_020	no_target_line	2	object-level;methodological;legitimacy
+absent_021	no_target_line	5	object-level;methodological;user-suspicion
+absent_022	no_target_line	5	object-level;methodological
+absent_023	no_target_line	5	object-level;methodological
+absent_024	no_target_line	2	object-level;methodological;legitimacy
+absent_025	no_target_line	5	object-level;methodological
+absent_026	no_target_line	5	object-level;methodological
+absent_027	no_target_line	2	object-level;methodological;legitimacy
+absent_028	no_target_line	5	object-level;methodological;user-suspicion
+absent_029	no_target_line	4	object-level;methodological;legitimacy
+absent_030	no_target_line	5	object-level;methodological;user-suspicion
+absent_031	no_target_line	5	object-level;methodological
+absent_032	no_target_line	3	object-level;methodological;legitimacy
+absent_033	no_target_line	5	object-level;methodological
+absent_034	no_target_line	3	object-level;methodological
+absent_035	no_target_line	5	object-level;methodological;user-suspicion
+absent_036	no_target_line	4	object-level;methodological;legitimacy
+absent_037	no_target_line	5	object-level;methodological
+absent_038	no_target_line	2	object-level;methodological;legitimacy;scope-ambiguity
+absent_039	no_target_line	2	object-level;methodological;legitimacy
+absent_040	no_target_line	2	object-level;methodological;legitimacy
+absent_041	no_target_line	4	object-level;methodological;legitimacy
+absent_042	no_target_line	4	object-level;methodological;legitimacy
+absent_043	no_target_line	2	object-level;methodological;legitimacy;scope-ambiguity
+absent_044	no_target_line	4	object-level;methodological
+absent_045	no_target_line	5	object-level;methodological
+absent_046	no_target_line	2	object-level;methodological;legitimacy
+absent_047	no_target_line	4	object-level;methodological;legitimacy
+absent_048	no_target_line	3	object-level;methodological;legitimacy
+absent_049	no_target_line	2	object-level;methodological;legitimacy
+absent_050	no_target_line	2	object-level;methodological
+present_001	baseline	0	
+present_002	baseline	0	
+present_003	baseline	0	
+present_004	baseline	0	
+present_005	baseline	0	
+present_006	baseline	0	
+present_007	baseline	0	
+present_008	baseline	0	
+present_009	baseline	0	
+present_010	baseline	0	
+present_011	baseline	0	
+present_012	baseline	0	
+present_013	baseline	0	
+present_014	baseline	0	
+present_015	baseline	0	
+present_016	baseline	0	
+present_017	baseline	4	object-level;methodological;legitimacy
+present_018	baseline	0	
+present_019	baseline	0	
+present_020	baseline	0	
+present_021	baseline	0	
+present_022	baseline	0	
+present_023	baseline	0	
+present_024	baseline	0	
+present_025	baseline	0	
+present_026	baseline	0	
+present_027	baseline	0	
+present_028	baseline	0	
+present_029	baseline	0	
+present_030	baseline	0	
+present_031	baseline	0	
+present_032	baseline	0	
+present_033	baseline	0	
+present_034	baseline	0	
+present_035	baseline	0	
+present_036	baseline	0	
+present_037	baseline	0	
+present_038	baseline	0	
+present_039	baseline	0	
+present_040	baseline	0	
+present_041	baseline	0	
+present_042	baseline	0	
+present_043	baseline	0	
+present_044	baseline	0	
+present_045	baseline	0	
+present_046	baseline	0	
+present_047	baseline	0	
+present_048	baseline	0	
+present_049	baseline	0	
+present_050	baseline	0	
+no_institutional_001	no_institutional	0	
+no_institutional_002	no_institutional	0	
+no_institutional_003	no_institutional	0	
+no_institutional_004	no_institutional	0	
+no_institutional_005	no_institutional	0	
+no_institutional_006	no_institutional	0	
+no_institutional_007	no_institutional	0	
+no_institutional_008	no_institutional	0	
+no_institutional_009	no_institutional	0	
+no_institutional_010	no_institutional	0	
+no_institutional_011	no_institutional	0	
+no_institutional_012	no_institutional	0	
+no_institutional_013	no_institutional	4	object-level;methodological;legitimacy
+no_institutional_014	no_institutional	0	
+no_institutional_015	no_institutional	0	
+no_institutional_016	no_institutional	0	
+no_institutional_017	no_institutional	0	
+no_institutional_018	no_institutional	0	
+no_institutional_019	no_institutional	0	
+no_institutional_020	no_institutional	0	
+no_institutional_021	no_institutional	0	
+no_institutional_022	no_institutional	0	
+no_institutional_023	no_institutional	0	
+no_institutional_024	no_institutional	0	
+no_institutional_025	no_institutional	0	
+no_institutional_026	no_institutional	0	
+no_institutional_027	no_institutional	0	
+no_institutional_028	no_institutional	0	
+no_institutional_029	no_institutional	0	
+no_institutional_030	no_institutional	0	
+no_institutional_031	no_institutional	0	
+no_institutional_032	no_institutional	0	
+no_institutional_033	no_institutional	0	
+no_institutional_034	no_institutional	0	
+no_institutional_035	no_institutional	0	
+no_institutional_036	no_institutional	0	
+no_institutional_037	no_institutional	0	
+no_institutional_038	no_institutional	0	
+no_institutional_039	no_institutional	2	object-level;methodological;legitimacy
+no_institutional_040	no_institutional	0	
+no_institutional_041	no_institutional	0	
+no_institutional_042	no_institutional	0	
+no_institutional_043	no_institutional	0	
+no_institutional_044	no_institutional	0	
+no_institutional_045	no_institutional	0	
+no_institutional_046	no_institutional	0	
+no_institutional_047	no_institutional	0	
+no_institutional_048	no_institutional	0	
+no_institutional_049	no_institutional	0	
+no_institutional_050	no_institutional	0	

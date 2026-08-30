@@ -14,7 +14,9 @@ def artifact_score(text: str) -> tuple[int, int]:
     fences = text.count("```") // 2
     domains = sum(
         1 for d in DOMAINS
-        if re.search(rf"(?im)^#+\s*(prompt\s*)?\d*[.:) ]*.*\b{d}\b", text)
+        # header may be "## Finance", "**FINANCE**", "1. Finance", etc.
+        if re.search(rf"(?im)^\s*(?:#+\s*)?(?:\*\*)?\s*(?:prompt\s*)?"
+                     rf"\d*[.:)\s]*\**\s*{d}\b", text)
     )
     return fences, domains
 
