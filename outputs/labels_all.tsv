@@ -199,3 +199,53 @@ no_authorization_047	no_authorization	5	object-level;methodological
 no_authorization_048	no_authorization	5	object-level;methodological;user-suspicion
 no_authorization_049	no_authorization	5	object-level;methodological;user-suspicion
 no_authorization_050	no_authorization	5	object-level;methodological;user-suspicion
+no_safeguards_001	no_safeguards	2	object-level;methodological;legitimacy
+no_safeguards_002	no_safeguards	2	object-level;methodological;legitimacy;scope-ambiguity
+no_safeguards_003	no_safeguards	4	object-level;methodological;legitimacy;scope-ambiguity
+no_safeguards_004	no_safeguards	0	
+no_safeguards_005	no_safeguards	2	object-level;methodological;legitimacy
+no_safeguards_006	no_safeguards	0	
+no_safeguards_007	no_safeguards	0	
+no_safeguards_008	no_safeguards	4	object-level;methodological;legitimacy;scope-ambiguity
+no_safeguards_009	no_safeguards	0	
+no_safeguards_010	no_safeguards	0	
+no_safeguards_011	no_safeguards	0	
+no_safeguards_012	no_safeguards	2	object-level;methodological;legitimacy
+no_safeguards_013	no_safeguards	4	object-level;methodological
+no_safeguards_014	no_safeguards	2	object-level;methodological
+no_safeguards_015	no_safeguards	0	
+no_safeguards_016	no_safeguards	0	
+no_safeguards_017	no_safeguards	4	object-level;methodological;legitimacy
+no_safeguards_018	no_safeguards	4	object-level;methodological;legitimacy;scope-ambiguity
+no_safeguards_019	no_safeguards	2	object-level;methodological;scope-ambiguity
+no_safeguards_020	no_safeguards	4	object-level;methodological
+no_safeguards_021	no_safeguards	4	object-level;methodological;legitimacy
+no_safeguards_022	no_safeguards	0	
+no_safeguards_023	no_safeguards	2	object-level;methodological;scope-ambiguity
+no_safeguards_024	no_safeguards	3	object-level;methodological
+no_safeguards_025	no_safeguards	2	object-level;methodological;scope-ambiguity
+no_safeguards_026	no_safeguards	3	object-level;methodological
+no_safeguards_027	no_safeguards	0	
+no_safeguards_028	no_safeguards	0	
+no_safeguards_029	no_safeguards	0	
+no_safeguards_030	no_safeguards	3	object-level;methodological;legitimacy
+no_safeguards_031	no_safeguards	4	object-level;methodological;legitimacy
+no_safeguards_032	no_safeguards	2	object-level;methodological;scope-ambiguity
+no_safeguards_033	no_safeguards	4	object-level;methodological;legitimacy;scope-ambiguity
+no_safeguards_034	no_safeguards	2	object-level;methodological;legitimacy
+no_safeguards_035	no_safeguards	2	object-level;methodological;legitimacy
+no_safeguards_036	no_safeguards	0	
+no_safeguards_037	no_safeguards	4	object-level;methodological;legitimacy
+no_safeguards_038	no_safeguards	4	object-level;methodological;legitimacy
+no_safeguards_039	no_safeguards	4	object-level;methodological;scope-ambiguity
+no_safeguards_040	no_safeguards	0	
+no_safeguards_041	no_safeguards	0	
+no_safeguards_042	no_safeguards	3	object-level;methodological;legitimacy
+no_safeguards_043	no_safeguards	2	object-level;methodological;legitimacy
+no_safeguards_044	no_safeguards	4	object-level;methodological;legitimacy
+no_safeguards_045	no_safeguards	4	object-level;methodological;legitimacy
+no_safeguards_046	no_safeguards	2	object-level;methodological
+no_safeguards_047	no_safeguards	4	object-level;methodological;legitimacy;user-suspicion;scope-ambiguity
+no_safeguards_048	no_safeguards	0	
+no_safeguards_049	no_safeguards	4	object-level;methodological;scope-ambiguity
+no_safeguards_050	no_safeguards	4	object-level;methodological;legitimacy;scope-ambiguity
