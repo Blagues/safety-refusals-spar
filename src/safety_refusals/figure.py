@@ -108,8 +108,67 @@ def reasons(labs, condition: str, title: str, path: Path) -> Path:
     return path
 
 
+SUMMARY_ROWS = [
+    ("baseline",         "Baseline",              "nothing removed"),
+    ("no_institutional", "Institutional realism", "\u2212 1,098 chars"),
+    ("no_safeguards",    "Safeguards",            "\u2212 190 chars"),
+    ("no_incidents",     "Incident specifics",    "\u2212 702 chars"),
+    ("no_target_line",   "Target line",           "\u2212 46 chars"),
+    ("no_authorization", "Authorization",         "\u2212 229 chars"),
+]
+GAP = 0.55  # surface gap between stacked segments
+
+
+def summary(labs, path: Path) -> Path:
+    fig, ax = plt.subplots(figsize=(10.4, 5.1))
+    fig.patch.set_facecolor("white")
+
+    for row, (cond, name, delta) in enumerate(SUMMARY_ROWS):
+        sub = [l for l in labs if l["condition"] == cond]
+        left = 0.0
+        for lv in sorted(RAMP):
+            n = sum(1 for l in sub if l["level"] == lv)
+            if not n:
+                continue
+            w = n / len(sub) * 100
+            _bar(ax, left, row - 0.26, max(w - GAP, 0.6), 0.52, RAMP[lv], r=0.028)
+            if w > 6.5:
+                ax.text(left + (w - GAP) / 2, row, str(n), ha="center", va="center",
+                        color="white", fontsize=10.5, fontweight="bold", zorder=4)
+            left += w
+        ax.text(-2.2, row - 0.10, name, ha="right", va="center",
+                fontsize=11, color=INK)
+        ax.text(-2.2, row + 0.20, delta, ha="right", va="center",
+                fontsize=8.8, color=FAINT)
+        produced = sum(1 for l in sub if l["level"] == 0)
+        ax.text(102.5, row, f"{produced/len(sub):.0%}", ha="left", va="center",
+                fontsize=11, color=ACCENT if produced else FAINT, fontweight="bold")
+
+    ax.text(102.5, -1.02, "produced\nthe artifact", ha="left", va="center",
+            fontsize=8.6, color=MUTED, linespacing=1.4)
+    ax.set_xlim(0, 100); ax.set_ylim(-0.75, len(SUMMARY_ROWS) - 0.25)
+    ax.invert_yaxis(); ax.set_yticks([])
+    _clean(ax)
+    ax.set_title("What the model did with the request, by what was removed",
+                 fontsize=14, color=INK, loc="left", pad=42, fontweight="bold")
+    ax.text(0, 1.055, "Each bar is 50 samples. Deleting 46 characters moves the model further "
+            "than deleting 1,098.",
+            transform=ax.transAxes, fontsize=10.2, color=MUTED)
+    handles = [plt.Line2D([], [], marker="s", ls="none", ms=9,
+                          color=RAMP[lv], label=f"{lv} · {dict(LADDER)[lv]}") for lv in sorted(RAMP)]
+    ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0, -0.13), ncol=3,
+              frameon=False, fontsize=9, handletextpad=0.5, columnspacing=1.8,
+              labelcolor=MUTED)
+    ax.text(0, -0.33, SUB.replace("n = 50 · ", ""), fontsize=8.8, color=FAINT,
+            transform=ax.transAxes)
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
+
+
 if __name__ == "__main__":
     labs = load()
+    print(summary(labs, OUT_DIR / "fig0_summary.png"))
     print(ladder(labs, "baseline", "Baseline — base prompt, target line included",
                  OUT_DIR / "fig1_baseline.png"))
     print(ladder(labs, "no_target_line", "Ablation — target line removed",
