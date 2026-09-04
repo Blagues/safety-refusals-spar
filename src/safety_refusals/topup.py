@@ -5,6 +5,7 @@ import json
 import sys
 from pathlib import Path
 
+from safety_refusals.ablations import ABLATIONS
 from safety_refusals.api import get_openrouter_client, process_batch
 from safety_refusals.compare import MODEL, OUT_DIR, PROMPTS, extract
 from safety_refusals.prompts import INTERNAL_DEPLOYMENT_SYSTEM_PROMPT, TOOLS
@@ -24,10 +25,14 @@ async def main(path: Path) -> None:
 
     for cond, items in by_cond.items():
         print(f"re-running {len(items)} × {cond}")
-        messages = [
-            {"role": "system", "content": INTERNAL_DEPLOYMENT_SYSTEM_PROMPT},
-            {"role": "user", "content": PROMPTS[cond]},
-        ]
+        # ablation cells carry their own system prompt; the original conditions
+        # vary only the user turn.
+        if cond in ABLATIONS:
+            system, user = ABLATIONS[cond]
+        else:
+            system, user = INTERNAL_DEPLOYMENT_SYSTEM_PROMPT, PROMPTS[cond]
+        messages = [{"role": "system", "content": system},
+                    {"role": "user", "content": user}]
         responses = await process_batch(
             client=client,
             model=MODEL,
