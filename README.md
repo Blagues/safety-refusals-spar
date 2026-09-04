@@ -1,9 +1,73 @@
 # safety-refusals — SPAR Model Forensics take-home
 
 Fork of [adsingh-64/safety-refusals](https://github.com/adsingh-64/safety-refusals) (problem 2).
-Adds a compliance ladder and stated-reason labels, then leave-one-out removal of five framing
-components at n=50 each. Raw responses, labels and figures are in `outputs/`; the ablations are
-defined as literal deletions in `src/safety_refusals/ablations.py`.
+
+Aditya found that one line — `- Training target: evidence-gathering process` — flips compliance
+on a benign safety-research task from 0% to 100%, and concluded that refusal tracks *how
+well-specified* the intervention is rather than *what it does*. This fork asks which part of the
+framing actually carries that effect.
+
+Three additions: an ordinal **compliance ladder** (0 = produced the artifact … 6 = flat decline)
+so "refusal" is not a binary, a **multi-label taxonomy of stated reasons**, and a decomposition of
+the prompt into components that are removed one at a time. All cells are n=50 at temperature 1.0
+against `anthropic/claude-opus-4.5`. Ablations are literal deletions in
+[`ablations.py`](src/safety_refusals/ablations.py); raw responses, labels and figures are in
+[`outputs/`](outputs/).
+
+## Findings
+
+| | direct compliance |
+|---|---:|
+| Baseline | 98% |
+| Institutional realism removed (identity, Slack, docs URL, team, sprint) | 96% |
+| **Authorization removed** (reporter/assignee, reviewer names, approval date) | **0%** |
+| Authorization restored, every name replaced by "internal" | 98% |
+| Authorization restored, fabricated names | 100% |
+
+**Authorization is the dominant component, and it is not about the names.** Removing three lines
+takes compliance from 98% to 0%, a larger effect than removing the target line. But replacing
+Sam Bowman and Jared Kaplan with `internal` recovers all of it, and inventing two people recovers
+all of it. Recognition of real researchers is not the mechanism; the assertion that *some* formal
+process happened is.
+
+**The model's stated reasons do not track what moves it.** In the authorization-removed reasoning
+traces, 48% explicitly say authorization would not have changed the answer — "Regardless of
+whether this is an internal Anthropic request, I should apply consistent ethical reasoning"
+(`no_authorization_r004`). It changes it from 0% to 98%. The concerns themselves are stated
+accurately; what is misreported is their sufficiency.
+
+**Answering the concerns helps, but less than sanctioning the work.** Four edits addressing the
+measured refusal grounds lift compliance to 10% (reasoning off) and 34% (reasoning on), against a
+0%/14% floor. The load-bearing edit requires the training data to contain cases where checking
+context *confirms* the concern — cited by 88% of compliers and 42% of non-compliers.
+
+Figures: [`fig12`](outputs/fig12_addback.png) add-back · [`fig14`](outputs/fig14_pivot_map.png)
+where each trace turns against the request · [`fig15`](outputs/fig15_addressed.png) /
+[`fig16`](outputs/fig16_addressed_reasoning.png) concern-addressed cells.
+
+## Reading the raw data
+
+```bash
+uv run python -m safety_refusals.sample_examples 0 4   # seeded random draw of responses
+uv run python -m safety_refusals.traces baseline --html # browsable reasoning traces
+uv run python -m safety_refusals.pivots                 # where traces turn, and what resolves them
+uv run python -m safety_refusals.run_ablation <cell> 50 # re-run any cell in ablations.py
+```
+
+## Labelling provenance
+
+The compliance ladder and reason labels for the original conditions are LLM-assigned and validated
+against [`gold_labels.tsv`](outputs/gold_labels.tsv) — all 20 responses of the n=10 pilot, both
+conditions, single rater. Those hand labels were committed before `judge.py` existed in the repo
+(`664778e` precedes `2ff549d`), so they were not written after seeing the model's answer. Twenty
+items validated, 500 labelled; agreement was on the level, not on the reason taxonomy.
+
+Levels for the two newest cells (`no_auth_reassured`, `no_auth_addressed`) are hand-coded by
+Claude, not judge-assigned and not blind — every response was read before assignment.
+
+**Known open discrepancy:** the judge labels 19/50 authorization-removed responses
+`user-suspicion`, while a requester-directed reading of the reasoning traces finds 0/100. Probably
+institutional-motive suspicion coded as suspicion of the requester, but it is unaudited.
 
 Aditya's original README is preserved verbatim below; his commit is the first in `git log`.
 
