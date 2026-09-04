@@ -163,6 +163,121 @@ def summary(labs, path: Path) -> Path:
     return path
 
 
+ADDBACK_ROWS = [
+    ("baseline",         "Baseline",              "Kevin Wang · Bowman, Kaplan"),
+    ("auth_fake_names",  "Fabricated names",      "Ben Kirchner · Krishnan, Feld"),
+    ("auth_no_names",    "No names at all",       "\u201cinternal\u201d \u00b7 \u201cinternal design review\u201d"),
+    ("no_authorization", "Authorization removed", "\u2212 229 chars"),
+]
+
+
+def addback(labs, path: Path) -> Path:
+    """Add-back cells: authorization block restored, identity varied."""
+    fig, ax = plt.subplots(figsize=(10.4, 3.9))
+    fig.patch.set_facecolor("white")
+
+    for row, (cond, name, note) in enumerate(ADDBACK_ROWS):
+        sub = [l for l in labs if l["condition"] == cond]
+        left = 0.0
+        for lv in sorted(RAMP):
+            n = sum(1 for l in sub if l["level"] == lv)
+            if not n:
+                continue
+            w = n / len(sub) * 100
+            _bar(ax, left, row - 0.26, max(w - GAP, 0.6), 0.52, RAMP[lv], r=0.028)
+            if w > 6.5:
+                ax.text(left + (w - GAP) / 2, row, str(n), ha="center", va="center",
+                        color="white", fontsize=10.5, fontweight="bold", zorder=4)
+            left += w
+        ax.text(-2.2, row - 0.10, name, ha="right", va="center", fontsize=11, color=INK)
+        ax.text(-2.2, row + 0.20, note, ha="right", va="center", fontsize=8.8, color=FAINT)
+        produced = sum(1 for l in sub if l["level"] == 0)
+        ax.text(102.5, row, f"{produced/len(sub):.0%}", ha="left", va="center",
+                fontsize=11, color=ACCENT if produced else FAINT, fontweight="bold")
+
+    ax.text(102.5, -1.02, "direct\ncompliance", ha="left", va="center",
+            fontsize=8.6, color=MUTED, linespacing=1.4)
+    ax.set_xlim(0, 100); ax.set_ylim(-0.75, len(ADDBACK_ROWS) - 0.25)
+    ax.invert_yaxis(); ax.set_yticks([])
+    _clean(ax)
+    ax.set_title("Does the authorization effect depend on who is named?",
+                 fontsize=14.5, color=INK, loc="left", pad=18, fontweight="bold")
+    present = {l["level"] for l in labs
+               if l["condition"] in {c for c, _, _ in ADDBACK_ROWS}}
+    handles = [plt.Line2D([], [], marker="s", ls="none", ms=9, color=RAMP[lv],
+                          label=f"{lv} \u00b7 {dict(LADDER)[lv]}")
+               for lv in sorted(RAMP) if lv in present]
+    ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0, -0.18), ncol=2,
+              frameon=False, fontsize=9, handletextpad=0.5, columnspacing=1.8,
+              labelcolor=MUTED)
+    ax.text(0, -0.45, SUB, fontsize=8.8, color=FAINT, transform=ax.transAxes)
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
+
+
+# level 6 appears only in the reasoning cells; kept out of RAMP so the other
+# figures' legends are unaffected.
+RAMP6 = {**RAMP, 6: "#0a2b55"}
+# level 1 appears only in the reasoning-on addressed cell; interpolated between 0 and 2
+RAMP7 = {**RAMP6, 1: "#6ea7eb"}
+REASONING_ROWS = [
+    ("baseline",                   "Baseline",              "reasoning off"),
+    ("baseline_reasoning",         "Baseline",              "reasoning on"),
+    ("no_authorization",           "Authorization removed", "reasoning off"),
+    ("no_authorization_reasoning", "Authorization removed", "reasoning on"),
+]
+
+
+def reasoning_compare(labs, path: Path) -> Path:
+    fig, ax = plt.subplots(figsize=(10.4, 4.1))
+    fig.patch.set_facecolor("white")
+    ypos = [0, 0.75, 1.9, 2.65]   # pair the two reasoning states per condition
+
+    for y, (cond, name, note) in zip(ypos, REASONING_ROWS):
+        sub = [l for l in labs if l["condition"] == cond]
+        left = 0.0
+        for lv in sorted(RAMP6):
+            n = sum(1 for l in sub if l["level"] == lv)
+            if not n:
+                continue
+            w = n / len(sub) * 100
+            _bar(ax, left, y - 0.24, max(w - GAP, 0.6), 0.48, RAMP6[lv], r=0.028)
+            if w > 6.5:
+                ax.text(left + (w - GAP) / 2, y, str(n), ha="center", va="center",
+                        color="white", fontsize=10.5, fontweight="bold", zorder=4)
+            left += w
+        ax.text(-2.2, y - 0.09, note, ha="right", va="center", fontsize=10.5, color=INK)
+        produced = sum(1 for l in sub if l["level"] == 0)
+        ax.text(102.5, y, f"{produced/len(sub):.0%}", ha="left", va="center",
+                fontsize=11, color=ACCENT if produced else FAINT, fontweight="bold")
+
+    for y, name in ((0.375, "Baseline"), (2.275, "Authorization removed")):
+        ax.text(-13.5, y, name, ha="right", va="center", fontsize=11.5,
+                color=INK, fontweight="bold")
+
+    ax.text(102.5, -1.05, "direct\ncompliance", ha="left", va="center",
+            fontsize=8.6, color=MUTED, linespacing=1.4)
+    ax.set_xlim(0, 100); ax.set_ylim(-0.65, 3.05)
+    ax.invert_yaxis(); ax.set_yticks([])
+    _clean(ax)
+    ax.set_title("Extended reasoning softens the refusal but not the effect",
+                 fontsize=14.5, color=INK, loc="left", pad=18, fontweight="bold")
+    present = {l["level"] for l in labs
+               if l["condition"] in {c for c, _, _ in REASONING_ROWS}}
+    handles = [plt.Line2D([], [], marker="s", ls="none", ms=9, color=RAMP6[lv],
+                          label=f"{lv} \u00b7 {dict(LADDER)[lv]}")
+               for lv in sorted(RAMP6) if lv in present]
+    ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0, -0.17), ncol=2,
+              frameon=False, fontsize=9, handletextpad=0.5, columnspacing=1.8,
+              labelcolor=MUTED)
+    ax.text(0, -0.52, "n = 50 per cell \u00b7 claude-opus-4.5 \u00b7 temperature 1.0",
+            fontsize=8.8, color=FAINT, transform=ax.transAxes)
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
+
+
 # three validated categorical slots (validate_palette.js --pairs all: PASS)
 VARYING = [("legitimacy", "#2a78d6"), ("user-suspicion", "#eb6834"),
            ("scope-ambiguity", "#1baf7a")]
@@ -243,3 +358,123 @@ if __name__ == "__main__":
     print(reasons(labs, "no_incidents",
                   "Stated reasons — incident specifics removed",
                   OUT_DIR / "fig11_no_incidents_reasons.png"))
+
+
+# --- concern-addressed ladder ---------------------------------------------
+# Four conditions, all sharing the same task. Rows 2-4 differ from row 1 only by
+# the authorization deletion and by what was added back to the Approach block.
+ADDRESSED_ROWS = [
+    ("baseline", "Baseline", "authorization present"),
+    ("no_authorization", "Authorization removed", "the 0% floor"),
+    ("no_auth_addressed", "+ concerns addressed", "four edits answering the stated concerns"),
+]
+
+
+def addressed(labs, extra: dict[str, dict[str, int]], path: Path) -> Path:
+    """Can the model's own stated concerns be answered without authorization?
+
+    `extra` supplies hand-coded levels for conditions not in labels_all.json,
+    keyed by condition then sample id.
+    """
+    def levels(cond):
+        if cond in extra:
+            return list(extra[cond].values())
+        return [l["level"] for l in labs if l["condition"] == cond]
+
+    fig, ax = plt.subplots(figsize=(10.4, 3.6))
+    fig.patch.set_facecolor("white")
+
+    for row, (cond, name, note) in enumerate(ADDRESSED_ROWS):
+        sub = levels(cond)
+        left = 0.0
+        for lv in sorted(RAMP6):
+            n = sum(1 for x in sub if x == lv)
+            if not n:
+                continue
+            w = n / len(sub) * 100
+            _bar(ax, left, row - 0.26, max(w - GAP, 0.6), 0.52, RAMP6[lv], r=0.028)
+            if w > 6.5:
+                ax.text(left + (w - GAP) / 2, row, str(n), ha="center", va="center",
+                        color="white", fontsize=10.5, fontweight="bold", zorder=4)
+            left += w
+        ax.text(-2.2, row - 0.10, name, ha="right", va="center", fontsize=11, color=INK)
+        ax.text(-2.2, row + 0.20, note, ha="right", va="center", fontsize=8.8, color=FAINT)
+        produced = sum(1 for x in sub if x == 0)
+        ax.text(102.5, row, f"{produced/len(sub):.0%}", ha="left", va="center",
+                fontsize=11, color=ACCENT if produced else FAINT, fontweight="bold")
+
+    ax.text(102.5, -1.00, "direct\ncompliance", ha="left", va="center",
+            fontsize=8.6, color=MUTED, linespacing=1.4)
+    ax.set_xlim(0, 100); ax.set_ylim(-0.75, len(ADDRESSED_ROWS) - 0.25)
+    ax.invert_yaxis(); ax.set_yticks([])
+    _clean(ax)
+    ax.set_title("Answering the model's stated concerns recovers 10% of the effect",
+                 fontsize=14.5, color=INK, loc="left", pad=18, fontweight="bold")
+    present = {lv for c, _, _ in ADDRESSED_ROWS for lv in levels(c)}
+    handles = [plt.Line2D([], [], marker="s", ls="none", ms=9, color=RAMP6[lv],
+                          label=f"{lv} \u00b7 {dict(LADDER)[lv]}")
+               for lv in sorted(RAMP6) if lv in present]
+    ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0, -0.16), ncol=2,
+              frameon=False, fontsize=9, handletextpad=0.5, columnspacing=1.8,
+              labelcolor=MUTED)
+    ax.text(0, -0.42, SUB, fontsize=8.8, color=FAINT, transform=ax.transAxes)
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
+
+
+REASONED_ROWS = [
+    ("baseline_reasoning", "Baseline", "authorization present"),
+    ("no_authorization_reasoning", "Authorization removed", "the floor"),
+    ("no_auth_addressed_reasoning", "+ concerns addressed",
+     "four edits answering the stated concerns"),
+]
+
+
+def addressed_reasoning(labs, extra, path: Path) -> Path:
+    """Same three conditions, reasoning enabled."""
+    def levels(cond):
+        if cond in extra:
+            return list(extra[cond].values())
+        return [l["level"] for l in labs if l["condition"] == cond]
+
+    fig, ax = plt.subplots(figsize=(10.4, 3.6))
+    fig.patch.set_facecolor("white")
+    for row, (cond, name, note) in enumerate(REASONED_ROWS):
+        sub = levels(cond)
+        left = 0.0
+        for lv in sorted(RAMP7):
+            n = sum(1 for x in sub if x == lv)
+            if not n:
+                continue
+            w = n / len(sub) * 100
+            _bar(ax, left, row - 0.26, max(w - GAP, 0.6), 0.52, RAMP7[lv], r=0.028)
+            if w > 6.5:
+                ax.text(left + (w - GAP) / 2, row, str(n), ha="center", va="center",
+                        color="white", fontsize=10.5, fontweight="bold", zorder=4)
+            left += w
+        ax.text(-2.2, row - 0.10, name, ha="right", va="center", fontsize=11, color=INK)
+        ax.text(-2.2, row + 0.20, note, ha="right", va="center", fontsize=8.8, color=FAINT)
+        produced = sum(1 for x in sub if x == 0)
+        ax.text(102.5, row, f"{produced/len(sub):.0%}", ha="left", va="center",
+                fontsize=11, color=ACCENT if produced else FAINT, fontweight="bold")
+
+    ax.text(102.5, -0.95, "direct\ncompliance", ha="left", va="center",
+            fontsize=8.6, color=MUTED, linespacing=1.4)
+    ax.set_xlim(0, 100); ax.set_ylim(-0.75, len(REASONED_ROWS) - 0.25)
+    ax.invert_yaxis(); ax.set_yticks([])
+    _clean(ax)
+    ax.set_title("With reasoning on, answering the concerns recovers a third of the effect",
+                 fontsize=14.5, color=INK, loc="left", pad=18, fontweight="bold")
+    present = {lv for c, _, _ in REASONED_ROWS for lv in levels(c)}
+    handles = [plt.Line2D([], [], marker="s", ls="none", ms=9, color=RAMP7[lv],
+                          label=f"{lv} \u00b7 {dict(LADDER)[lv]}")
+               for lv in sorted(RAMP7) if lv in present]
+    ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0, -0.20), ncol=2,
+              frameon=False, fontsize=9, handletextpad=0.5, columnspacing=1.8,
+              labelcolor=MUTED)
+    ax.text(0, -0.52, "n = 50 \u00b7 claude-opus-4.5 \u00b7 reasoning on \u00b7 temperature 1.0",
+            fontsize=8.8, color=FAINT, transform=ax.transAxes)
+    fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
